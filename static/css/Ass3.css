@@ -1,0 +1,49 @@
+.container {
+  width: 100% !important;
+}
+#pageContent {
+  padding: 0;
+}
+#welcomeMelbourne {
+  background: url("../img/MelbourneCity.jpg");
+  background-size: cover;
+}
+#welcomeMelbourne h1 {
+  color: white;
+  font-weight: bolder;
+  text-shadow: -1px 1px 0 #999, 1px 1px 0 #999, 1px -1px 0 #999, -1px -1px 0 #999;
+}
+#welcomeMelbourne div {
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: rgba(100, 100, 100, 0.5);
+  text-shadow: -1px 1px 0 #444, 1px 1px 0 #444, 1px -1px 0 #444, -1px -1px 0 #444;
+  color: white;
+}
+.col-md-4 {
+  border-radius: 5px;
+}
+.col-md-4 .col-md-12 {
+  border-radius: 5px;
+  padding: 0;
+}
+.subContent {
+  height: 260px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(100, 100, 100, 0.5);
+  color: white;
+}
+#homeAttractions {
+  background: url("../img/attraction.jpg");
+  background-size: cover;
+}
+#homeFood {
+  background: url("../img/food.jpg");
+  background-size: cover;
+}
+#homeHotel {
+  background: url("../img/hotel.jpg");
+  background-size: cover;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HomePage</title>
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="static/css/normalize.css">
+    <link rel="stylesheet" href="static/css/Ass3.css">
+    <!-- mapbox css-->
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css">
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css' type='text/css' />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- JavaScript-->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/fb3f2b2a7a.js" crossorigin="anonymous"></script>
+    <!-- mapboxjs-->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js'></script>
+    <!-- google charts-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="navbar-header active">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                        <a class="navbar-brand" href="./index.html">Home page</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="./template/map.html">Melbourne Transport</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Attractions<strong class="caret"></strong></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="./template/attraction.html">Explore Data</a>
+                                    </li>
+                                    <li>
+                                        <a href="./template/attraction1.html">Popular Attractions</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="./template/restaurant.html">Delicious Food</a>
+                            </li>
+                            <li>
+                                <a href="./template/hotel.html">Comfortable Hotels</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="jumbotron" id="welcomeMelbourne">
+                    <h1>
+                        Welcome to Melbourne!
+                    </h1>
+                    <div>
+                        <p><b>Melbourne</b> is the capital and most-populous city of the Australian state of Victoria, and the second-most populous city in both Australia and Oceania. Its name generally refers to a 9,993 km<sup>2</sup> (3,858 sq mi) metropolitan
+                            area known as <b>Greater Melbourne</b>, comprising an urban agglomeration of 31 local municipalities, although the name is also used specifically for the local municipality of City of Melbourne based around its central business
+                            area. The city occupies much of the northern and eastern coastlines of Port Phillip Bay and spreads into the Mornington Peninsula and the hinterlands towards the Yarra Valley, the Dandenong and Macedon Ranges. It has a population
+                            over 5 million, mostly residing to the east side of the city centre, and its inhabitants are commonly referred to as "Melburnians".</p>
+                    </div>
+                    <p>
+                        <a class="btn btn-primary btn-lg" href="./template/map.html">Explore Melbourne</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix" style="margin-bottom: 1%">
+            <div class="col-md-4 column">
+                <div class="col-md-12" id="homeAttractions">
+                    <div class="subContent">
+                        <h2>
+                            Attractions and experiences
+                        </h2>
+                        <p>
+                            There are so many experiences that worth your while and showcase the best that Melbourne has to offer. Plan a fun post-lockdown staycation and really get to know this amazing city that we call home.
+                        </p>
+                        <p>
+                            <a class="btn btn-primary btn-sm" href="./template/attraction.html">View Details</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 column">
+                <div class="col-md-12" id="homeFood">
+                    <div class="subContent">
+                        <h2>
+                            Delicious Food
+                        </h2>
+                        <p>
+                            From Sichuan eggplant to late-night souvlaki to, yes, avocado toast, these are the defining dishes of Australia’s culinary capital.
+                        </p>
+                        <p>
+                            <a class="btn btn-primary btn-sm" href="./template/restaurant.html">View Details</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 column">
+                <div class="col-md-12" id="homeHotel">
+                    <div class="subContent">
+                        <h2>
+                            Comfortable Hotels
+                        </h2>
+                        <p>
+                            Melbourne is now regarded as one of the great cities of the world. Whether you are exploring Melbourne on your travels or staying for business there are hotels worth experiencing. Here are top hotels ranked by various of aspects, select and explore based on your interest!
+                        </p>
+                        <p>
+                            <a class="btn btn-primary btn-sm" href="./template/hotel.html">View Details</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>restaurant</title>
+    <link rel="stylesheet" href="../static/css/report.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/modules/networkgraph.js"></script>
+</head>
+<body> 
+
+  <main>
+
+    <div class="header px-4 py-5 my-5 text-center">
+      <h1 class="display-5 fw-bold">Explore Melbourne Restaurants</h1>
+      <h2>The Iconic Dishes of Melbourne</h2>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">From Sichuan eggplant to late-night souvlaki to, yes, avocado toast, 
+          these are the defining dishes of Australia’s culinary capital 
+          oTo truly understand Melbourne, you need to look at everything it eats, 
+          from the cheap takeout shops selling deep-fried dim sims (no, not dim sum) to tasting-menu temples championing native ingredients like saltbush and finger lime.</p>
+      </div>
+    </div>
+
+    <div class=" px-4 py-5 my-5 text-center">
+      <h9 class=" fw-bold">All the data are from <a href="https://www.zomato.com/melbourne/great-food-no-bull">Zomato best food in Melbourne</a></h9>
+      <p>The following statistics are summary of where and what these 187 reataurants are</p>
+
+    </div>
+
+
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <figure class="highcharts-figure">
+            <div id="bubble"></div>
+          </figure>
+        </div>
+        <div class="col-lg-6">
+          <h2 class="display-5 fw-bold lh-1 mb-3">Hot Labels of Melbourne Restaurants</h2>
+          <p class="lead"> Australia is a country of immigrants, and Melbourne is the most vibrant and alive city of this country. You can explore worldwide dishes here. Most recently, Melbourne’s greatest export has been its cafe culture — the all-day coffee and fancy-toast phenomenon that’s led to the brunchification of planet earth. </p>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-lg-6">
+          <h4 class="display-5 fw-bold lh-1 mb-3">TOP5 Greatest Neighbourhoods To Eat In Melbourne</h4>
+          <p class="lead"> We selected top5 suburbs among Melbourne where located the most best restauants.</p>
+
+        </div>
+        <div class="col-10 col-sm-8 col-lg-6">
+          <figure class="highcharts-figure">
+            <div id="bar"></div>
+        </figure>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <figure class="highcharts-figure">
+            <div id="network">
+            </div>
+        </figure>
+        </div>
+        <div class="col-lg-6">
+          <h2 class="display-5 fw-bold lh-1 mb-3">Types Of Restaurants You Can Find </h2>
+          <p class="lead"> We provide the information of labels that link to restaurants in the Top5 suburbs. When you come to these areas, choosing a restaurant randomly will surprise you。 </p>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- suburbs -->
+
+    <div class="px-4 py-5 my-5 text-center">
+      <img class="d-block mx-auto mb-4" src="https://t4.ftcdn.net/jpg/03/23/85/89/360_F_323858981_RHbENerzBL236hqdN92nYdm8aqdbkuq2.jpg" alt="" width="200" height="170">
+      <h1 class="display-5 fw-bold">Best Restaurants in Suburbs</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">We selecte the highest-rated restaurants in each suburbs</p>
+      </div>
+    </div>
+
+    <div class="cbd container  px-4 py-5">
+      <h2 class="pb-2 border-bottom">Melbourne CBD</h2>
+
+      <div class="row row-cols-1 row-cols-lg-4 align-items-stretch g-4 py-5" id="cbd">
+
+      </div>
+    </div>
+
+
+    <div class="fiz container  px-4 py-5" >
+      <h2 class="pb-2 border-bottom">Fitzroy</h2>
+      <div class="row row-cols-1 row-cols-lg-4 align-items-stretch g-4 py-5" id="Fitzroy">
+
+      </div>
+
+    </div>
+
+    <div class="fiz container  px-4 py-5" >
+      <h2 class="pb-2 border-bottom">South Yarra</h2>
+      <div class="row row-cols-1 row-cols-lg-4 align-items-stretch g-4 py-5" id="syarra">
+
+      </div>
+
+    </div>
+
+
+    <div class="fiz container  px-4 py-5" >
+      <h2 class="pb-2 border-bottom">St Kilda</h2>
+      <div class="row row-cols-1 row-cols-lg-4 align-items-stretch g-4 py-5" id="St Kilda">
+
+      </div>
+
+    </div>
+
+    <div class="fiz container  px-4 py-5" >
+      <h2 class="pb-2 border-bottom">Richmond</h2>
+      <div class="row row-cols-1 row-cols-lg-4 align-items-stretch g-4 py-5" id="Richmond">
+
+      </div>
+
+    </div>
+
+
+  </main>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+<script src="../static/zomato_data.js"></script>
+<script src="../static/report.js"></script>
+
+
+</html>

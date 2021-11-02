@@ -1,0 +1,52 @@
+body {
+    margin: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    background-image: url('https://cdn.concreteplayground.com/content/uploads/2015/11/Meatworks-South-Melbourne-01.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:black;
+    background-position:center;
+    
+
+}
+
+
+
+.content {
+    column-count: 4;
+    column-gap: 0;
+    margin:60px;
+}
+
+
+.card{
+    box-sizing: border-box;
+    break-inside: avoid;
+    padding: 10px;
+    margin: 10px;
+}
+
+.card:hover{
+    background-color: rgb(241, 238, 238);
+}
+
+
+.card img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card p{
+    margin:0;
+    font-size: 2px;
+    vertical-align: middle;
+}
+
+p>.badge{
+    vertical-align: middle;
+    margin:2px;
+}
